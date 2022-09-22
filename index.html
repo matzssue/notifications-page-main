@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Notifications page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,800;1,500;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="head">
+      <p class="notinumb">Notifications <span id="number"></span>
+      </p>
+      <button id="mark" type="button">Mark all as read
+      </button>
+    </div>
+    <div class="notifications">
+      <div class="noti">
+        <img src="assets/images/avatar-angela-gray.webp" alt="">
+          <p>
+            <span class="name">Mark Webber</span>
+            <span class="text">reacted to your recent post</span>
+            <span class="interactive-text">My first tournament today!</span>
+            <span class="reddot"></span>
+            <br>
+            <span class="time">1m ago</span>
+          </p>
+        </div>
+      <div class="noti">
+        <img src="assets/images/avatar-anna-kim.webp" alt="">
+          <p>
+            <span class="name">Angela Gray</span>
+            <span class="text">followed you</span>
+            <span class="interactive-text"></span>
+            <span class="reddot"></span>
+            <br>
+            <span class="time">5m ago</span>
+          </p>
+      </div>
+      <div class="noti">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+          <p>
+            <span class="name">Jacob Thompson</span>
+            <span class="text">has joined your group</span>
+            <span class="interactive-text">Chess Club</span>
+            <span class="reddot"></span>
+            <br>
+            <span class="time">1 day ago</span>
+          </p>
+      </div>
+      <div class="noti" id="msga">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+          <p>
+            <span class="name">Rizky Hasanuddin</span>
+            <span class="text">sent you a private</span>
+            <span class="interactive-text button-msg">message</span>
+            <span class="reddot"></span>
+            <br>
+            <span class="time">5 days ago</span>
+          </p>
+        </div>
+       <div id="message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</div>
+      
+      <div class="noti">
+        <img src="assets/images/avatar-mark-webber.webp" alt="">
+          <p>
+            <span class="name">Kimberly Smith</span>
+            <span class="text">commented on your picture</span>
+            <span class="interactive-text"></span>
+            <span class="reddot"></span>
+            <br>
+            <span class="time">1 week ago</span>
+          </p>
+      </div>
+      <div class="noti column">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+          <p>
+            <span class="name">Nathan Peterson</span>
+            <span class="text">reacted to your recent post</span>
+            <span class="interactive-text">5 end-game strategies to increase your win rate</span>
+            <span class="reddot"></span>
+            <br>
+            <span class="time">2 weeks ago</span>
+          </p>
+      </div>  
+      <div class="noti">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          <p>
+            <span class="name">Anna Kim</span>
+            <span class="text">left the group</span>
+            <span class="interactive-text">Chess Club</span>
+            <span class="reddot"></span>
+            <br>
+            <span class="time">2 weeks ago</span>
+          </p>
+      </div>
+
+    </div>
+ 
+
+
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

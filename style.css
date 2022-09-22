@@ -1,0 +1,107 @@
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%)
+
+}
+* {
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+    background-color: hsl(210, 60%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    margin: 2em 0 2em 0;
+    width: 60vw;
+    background-color: var(--White);
+    border: 15px;
+    border-radius: 1.5em;
+}
+#wrapper .head {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em 0 2em;
+}
+.notifications {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 1.2em 0.5em 1.2em;
+    height: auto;
+}
+
+.notinumb {
+    font-size: 2em;
+    font-weight: bolder;
+}
+#number {
+    background-color: hsl(219, 85%, 26%);
+    display: block;
+    float: right;
+    margin-left: 1em;
+    width: 40px;
+    border-radius: 0.3em;
+    text-align: center;
+    color:white;
+    font-size: 0.9em;
+}
+
+#mark {
+    background-color: white;
+    border: 0px;
+    font-size: 1em;
+    color:hsl(219, 12%, 42%);
+    cursor: pointer;
+}
+.reddot{
+    width: 10px;
+    height: 10px;
+    background-color: var(--Red);
+    display: inline-block;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+.notifications .noti {
+    margin: 0.2em;
+    background-color:hsl(210, 60%, 98%);
+    display: flex;
+    padding: 0.7em;
+    border-radius: 1em;
+    cursor: pointer;
+    
+}
+
+.notifications img {
+    margin-right: 2em;
+}
+.notifications p {
+    display:inline-block;
+    width: 100%;
+}
+#message {
+    display: none;
+    padding: 1em;
+    height: 10vh;
+    width: 70%;
+    margin-left: 8.4em;
+    background-color: yellow;
+}
+
+.msg-active {
+    display: flex;
+}
+
+.active {
+    background-color: red
+ }
