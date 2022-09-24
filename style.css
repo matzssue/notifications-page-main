@@ -39,10 +39,28 @@ body {
     margin: 0.5em 1.2em 0.5em 1.2em;
     height: auto;
 }
-
+.name, 
+.interactive-text {
+    font-weight: bold;
+}
+.name:hover,
+.interactive-text:hover {
+    color: var(--Blue)
+}
+.text {
+    color: rgb(71, 66, 66)
+}
 .notinumb {
     font-size: 2em;
     font-weight: bolder;
+}
+.profile-pic {
+    float: right;
+    width: 50px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 #number {
     background-color: hsl(219, 85%, 26%);
@@ -79,7 +97,6 @@ body {
     padding: 0.7em;
     border-radius: 1em;
     cursor: pointer;
-    
 }
 
 .notifications img {
@@ -92,16 +109,17 @@ body {
 #message {
     display: none;
     padding: 1em;
-    height: 10vh;
     width: 70%;
     margin-left: 8.4em;
-    background-color: yellow;
+    background-color: hsl(205, 33%, 90%);
+    border-radius: 0.3em;
+    margin-bottom: 2em;
+    margin-top: -2em;
 }
 
 .msg-active {
     display: flex;
 }
-
 .active {
     background-color: red
  }
