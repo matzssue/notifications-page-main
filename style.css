@@ -42,6 +42,7 @@ body {
 .name, 
 .interactive-text {
     font-weight: bold;
+    font-size: 1em;
 }
 .name:hover,
 .interactive-text:hover {
@@ -50,34 +51,43 @@ body {
 .text {
     color: rgb(71, 66, 66)
 }
+.time {
+    margin-top: 0.5em;
+    color: rgb(108, 100, 100);
+    width: 50%;
+    display: flex;
+    font-size: 0.9em;
+}
 .notinumb {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bolder;
 }
 .profile-pic {
-    float: right;
-    width: 50px;
-    height: auto;
-    padding: 0;
-    margin: 0;
     display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+.piccc {
+    display: flex;
+    align-self: center;
 }
 #number {
     background-color: hsl(219, 85%, 26%);
     display: block;
     float: right;
     margin-left: 1em;
-    width: 40px;
+    width: 35px;
     border-radius: 0.3em;
     text-align: center;
     color:white;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 #mark {
     background-color: white;
     border: 0px;
-    font-size: 1em;
+    font-size: 0.9em;
     color:hsl(219, 12%, 42%);
     cursor: pointer;
 }
@@ -110,16 +120,67 @@ body {
     display: none;
     padding: 1em;
     width: 70%;
-    margin-left: 8.4em;
     background-color: hsl(205, 33%, 90%);
     border-radius: 0.3em;
-    margin-bottom: 2em;
-    margin-top: -2em;
+    margin: -2em 0em 2em 8.4em;
 }
 
 .msg-active {
     display: flex;
 }
-.active {
-    background-color: red
+   
+ @media only screen and (max-width:850px) {
+    #wrapper {
+        width: 90vh;
+    }
+    .noti img {
+        width: 90px;
+        height: 90px;
+    }
+    .noti .profile-pic {
+        width: 50px;
+        height: 50px;
+    }
+ }
+ @media only screen and (max-width:480px) {
+    #wrapper {
+        width: 90vh;
+    }
+    .notinumb {
+        font-size: 1em;
+    }
+    #number {
+        font-size: 1em;
+    }
+    .name,
+    .text,
+    .interactive-text {
+        font-size: 0.9em;
+    }
+    .time {
+        font-size: 0.8em;
+    }
+    .noti img {
+        width: 50px;
+        height: 50px;
+    }
+    .reddot {
+        width: 8px;
+        height: 8px;
+    }
+    .noti .profile-pic {
+        width: 25px;
+        height: 25px;
+    }
+    #wrapper .head {
+        height: 8vh;
+    }
+    #message {
+        padding: 1em;
+        width: 70%;
+        border-radius: 0.3em;
+  
+        margin: 0 0 2em 8.4em;
+        font-size: 0.7em;
+    }
  }
