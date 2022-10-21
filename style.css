@@ -1,186 +1,185 @@
 :root {
-    --Red: hsl(1, 90%, 64%);
-    --Blue: hsl(219, 85%, 26%);
-    --White: hsl(0, 0%, 100%);
-    --Verylightgrayishblue: hsl(210, 60%, 98%)
-
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Verylightgrayishblue: hsl(210, 60%, 98%);
 }
 * {
-   font-family: 'Plus Jakarta Sans', sans-serif;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: hsl(210, 60%, 98%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #wrapper {
-    margin: 2em 0 2em 0;
-    width: 60vw;
-    background-color: var(--White);
-    border: 15px;
-    border-radius: 1.5em;
+  margin: 2em 0 2em 0;
+  width: 60vw;
+  background-color: var(--White);
+  border: 15px;
+  border-radius: 1.5em;
 }
 #wrapper .head {
-    display: flex;
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em 0 2em;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em 0 2em;
 }
 .notifications {
-    display: flex;
-    flex-direction: column;
-    margin: 0.5em 1.2em 0.5em 1.2em;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 1.2em 0.5em 1.2em;
+  height: auto;
 }
-.name, 
+.name,
 .interactive-text {
-    font-weight: bold;
-    font-size: 1em;
+  font-weight: bold;
+  font-size: 1em;
 }
 .name:hover,
 .interactive-text:hover {
-    color: var(--Blue)
+  color: var(--Blue);
 }
 .text {
-    color: rgb(71, 66, 66)
+  color: rgb(71, 66, 66);
 }
 .time {
-    margin-top: 0.5em;
-    color: rgb(108, 100, 100);
-    width: 50%;
-    display: flex;
-    font-size: 0.9em;
+  margin-top: 0.5em;
+  color: rgb(108, 100, 100);
+  width: 50%;
+  display: flex;
+  font-size: 0.9em;
 }
 .notinumb {
-    font-size: 1.5em;
-    font-weight: bolder;
+  font-size: 1.5em;
+  font-weight: bolder;
 }
 .profile-pic {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    padding: 0;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  padding: 0;
 }
 .piccc {
-    display: flex;
-    align-self: center;
+  display: flex;
+  align-self: center;
 }
 #number {
-    background-color: hsl(219, 85%, 26%);
-    display: block;
-    float: right;
-    margin-left: 1em;
-    width: 35px;
-    border-radius: 0.3em;
-    text-align: center;
-    color:white;
-    font-size: 0.8em;
+  background-color: hsl(219, 85%, 26%);
+  display: block;
+  float: right;
+  margin-left: 1em;
+  width: 35px;
+  border-radius: 0.3em;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
 }
 
 #mark {
-    background-color: white;
-    border: 0px;
-    font-size: 0.9em;
-    color:hsl(219, 12%, 42%);
-    cursor: pointer;
+  background-color: white;
+  border: 0px;
+  font-size: 0.9em;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
 }
-.reddot{
-    width: 10px;
-    height: 10px;
-    background-color: var(--Red);
-    display: inline-block;
-    border-radius: 7px;
-    margin-left: 10px;
+.reddot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--Red);
+  display: inline-block;
+  border-radius: 7px;
+  margin-left: 10px;
 }
 
 .notifications .noti {
-    margin: 0.2em;
-    background-color:hsl(210, 60%, 98%);
-    display: flex;
-    padding: 0.7em;
-    border-radius: 1em;
-    cursor: pointer;
+  margin: 0.2em;
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  padding: 0.7em;
+  border-radius: 1em;
+  cursor: pointer;
 }
 
 .notifications img {
-    margin-right: 2em;
+  margin-right: 2em;
 }
 .notifications p {
-    display:inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 #message {
-    display: none;
-    padding: 1em;
-    width: 70%;
-    background-color: hsl(205, 33%, 90%);
-    border-radius: 0.3em;
-    margin: -2em 0em 2em 8.4em;
+  display: none;
+  padding: 1em;
+  width: 70%;
+  background-color: hsl(205, 33%, 90%);
+  border-radius: 0.3em;
+  margin: -2em 0em 2em 8.4em;
 }
 
 .msg-active {
-    display: flex;
+  display: flex;
 }
-   
- @media only screen and (max-width:850px) {
-    #wrapper {
-        width: 90vh;
-    }
-    .noti img {
-        width: 90px;
-        height: 90px;
-    }
-    .noti .profile-pic {
-        width: 50px;
-        height: 50px;
-    }
- }
- @media only screen and (max-width:480px) {
-    #wrapper {
-        width: 90vh;
-    }
-    .notinumb {
-        font-size: 1em;
-    }
-    #number {
-        font-size: 1em;
-    }
-    .name,
-    .text,
-    .interactive-text {
-        font-size: 0.9em;
-    }
-    .time {
-        font-size: 0.8em;
-    }
-    .noti img {
-        width: 50px;
-        height: 50px;
-    }
-    .reddot {
-        width: 8px;
-        height: 8px;
-    }
-    .noti .profile-pic {
-        width: 25px;
-        height: 25px;
-    }
-    #wrapper .head {
-        height: 8vh;
-    }
-    #message {
-        padding: 1em;
-        width: 70%;
-        border-radius: 0.3em;
-  
-        margin: 0 0 2em 8.4em;
-        font-size: 0.7em;
-    }
- }
+
+@media only screen and (max-width: 850px) {
+  #wrapper {
+    width: 90vh;
+  }
+  .noti img {
+    width: 90px;
+    height: 90px;
+  }
+  .noti .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #wrapper {
+    width: 90vh;
+  }
+  .notinumb {
+    font-size: 1em;
+  }
+  #number {
+    font-size: 1em;
+  }
+  .name,
+  .text,
+  .interactive-text {
+    font-size: 0.9em;
+  }
+  .time {
+    font-size: 0.8em;
+  }
+  .noti img {
+    width: 50px;
+    height: 50px;
+  }
+  .reddot {
+    width: 8px;
+    height: 8px;
+  }
+  .noti .profile-pic {
+    width: 25px;
+    height: 25px;
+  }
+  #wrapper .head {
+    height: 8vh;
+  }
+  #message {
+    padding: 1em;
+    width: 70%;
+    border-radius: 0.3em;
+
+    margin: 0 0 2em 8.4em;
+    font-size: 0.7em;
+  }
+}
